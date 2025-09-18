@@ -33,8 +33,8 @@ public class AquaticTorches {
     public static final RegistryObject<AquaticWallTorchBlock> AQUATIC_WALL_TORCH = BLOCKS.register("aquatic_wall_torch", () -> new AquaticWallTorchBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.TORCH).lightLevel(state -> 15).lootFrom(AQUATIC_TORCH), ParticleTypes.FLAME));
     public static final RegistryObject<StandingAndWallBlockItem> AQUATIC_TORCH_ITEM = ITEMS.register("aquatic_torch", () -> new StandingAndWallBlockItem(AQUATIC_TORCH.get(), AQUATIC_WALL_TORCH.get(), new Item.Properties(), Direction.DOWN));
 
-    public AquaticTorches() {
-        IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
+    public AquaticTorches(FMLJavaModLoadingContext context) {
+        IEventBus modEventBus = context.getModEventBus();
 
         BLOCKS.register(modEventBus);
         ITEMS.register(modEventBus);
