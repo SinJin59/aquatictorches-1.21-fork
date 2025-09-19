@@ -1,19 +1,20 @@
 {
   "type": "minecraft:crafting_shaped",
-  "pattern": [
-    "X",
-    "#"
-  ],
+  "category": "misc",
   "key": {
     "#": {
       "item": "minecraft:stick"
     },
     "X": {
-      "item": "minecraft:glow_ink_sac"
+        "item": "minecraft:glow_ink_sac"
     }
   },
+  "pattern": [
+    "X",
+    "#"
+  ],
   "result": {
-    "item": "aquatictorches:aquatic_torch",
-    "count": 4
+    "count": 4,
+    "id": "aquatictorches:aquatic_torch"
   }
 }
